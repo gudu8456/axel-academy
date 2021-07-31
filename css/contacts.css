@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25rem;
+    place-items: center;
+    padding: 1rem 2rem;
+    height: 20vh;
+    width: 100vw;
+    background-image: url("/images/school.jpeg");
+    color: white;
+}
+
+header .logo-img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+header .nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+}
+
+header .nav-bar li {
+    padding: 1rem;
+}
+
+header .nav-bar li:hover {
+    background-color: orange;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+header h1 {
+    text-decoration: underline red;
+}
+
+.main {
+    display: grid;
+    height: 125vh;
+    text-align: center;
+    width: 100vw;
+    grid-auto-flow: row;
+    grid-template-rows: 50vh 60vh;
+}
+
+.secA iframe {
+    height: 50vh;
+    width: 100vw;
+    padding: 2rem;
+}
+
+.secB {
+    height: 50vh;
+    width: 100vw;
+    padding: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact {
+    display: grid;
+    grid-row-gap: 2em;
+}
+
+.form {
+    display: grid;
+    width: 80%;
+    grid-row-gap: 1em;
+}
+
+input {
+    height: 3rem;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 2rem;
+}
+
+.form button {
+    background-color: blueviolet;
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+height: 3em;
+border-radius: 1em;
+}
+
+.form textarea {
+    font-size: 1rem;
+    border: 2px solid blueviolet;
+    border-radius: 1rem;
+    padding: .5rem 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: #000;
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+}
+
+footer>.quick-links>ul {
+    list-style: none;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer img {
+    max-width: 2rem;
+}

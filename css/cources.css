@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25rem;
+    place-items: center;
+    padding: 1rem 2rem;
+    height: 20vh;
+    width: 100vw;
+    background-image: url("/images/school.jpeg");
+    color: white;
+}
+
+header .logo-img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+header .nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+}
+
+header .nav-bar li {
+    padding: 1rem;
+}
+
+header .nav-bar li:hover {
+    background-color: orange;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+header h1 {
+    text-decoration: underline red;
+}
+
+.main {
+    display: grid;
+    height: 183vh;
+    text-align: center;
+    width: 100vw;
+    grid-auto-flow: row;
+    place-items: center;
+}
+
+.card {
+    display: grid;
+    grid-auto-flow: column;
+    width: 90vw;
+    grid-column-gap: 2rem;
+}
+
+.cards {
+    background-color: paleturquoise;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: small;
+}
+
+.place-head {
+    height: 30vh;
+    background: url(https://ibsindia.org/wp-content/uploads/2016/03/placement-banner.png) no-repeat center;
+    background-size: auto;
+    width: 90vw;
+    padding-top: 5rem;
+    background-size: cover;
+    color: black;
+}
+
+.place-head>h2, .place-head>p {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.pics {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pics img {
+    height: 10em;
+    width: 24em;
+    object-fit: scale-down;
+    padding: 0em 2em;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    background-color: #000;
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+}
+
+footer>.quick-links>ul {
+    list-style: none;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer img {
+    max-width: 2rem;
+}
